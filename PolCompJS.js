@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
 
         // Define quadrant colors
-        const topLeftColor = '#000';
+        const topLeftColor = '#F0BDBC';
         const topRightColor = '#A1D8F4';
         const bottomLeftColor = '#CDE3BF';
         const bottomRightColor = '#DDC8DE';
