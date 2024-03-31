@@ -95,8 +95,8 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.lineTo(canvas.width / 2 - 5, 10);
         ctx.lineTo(canvas.width / 2 + 5, 10);
         ctx.closePath();
-        ctx.fillStyle = '#000'; // Set arrowhead color
-        ctx.fill(); // Fill the arrowhead with color
+        ctx.fillStyle = '#000';
+        ctx.fill();
 
         // Draw arrowhead pointing down
         ctx.beginPath();
@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.lineTo(canvas.width / 2 - 5, canvas.height - 10);
         ctx.lineTo(canvas.width / 2 + 5, canvas.height - 10);
         ctx.closePath();
-        ctx.fill(); // Fill the arrowhead with color
+        ctx.fill();
     
         // Draw arrowhead pointing right
         ctx.beginPath();
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.lineTo(canvas.width - 10, canvas.height / 2 - 5);
         ctx.lineTo(canvas.width - 10, canvas.height / 2 + 5);
         ctx.closePath();
-        ctx.fill(); // Fill the arrowhead with color
+        ctx.fill();
 
         // Draw arrowhead pointing left
         ctx.beginPath();
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
         ctx.lineTo(10, canvas.height / 2 - 5);
         ctx.lineTo(10, canvas.height / 2 + 5);
         ctx.closePath();
-        ctx.fill(); // Fill the arrowhead with color
+        ctx.fill();
     
         // Draw points
         points.forEach(point => {
@@ -131,7 +131,8 @@ document.addEventListener("DOMContentLoaded", function() {
             ctx.closePath();
     
             ctx.fillStyle = '#000';
-            ctx.fillText(point.label, point.x + 10, point.y - 10);
+            ctx.textAlign = 'center';
+            ctx.fillText(point.label, point.x, point.y - 10);
         });
     
         // Draw axis labels
